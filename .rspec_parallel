@@ -1,0 +1,4 @@
+# More info: https://github.com/grosser/parallel_tests
+--require rails_helper
+--format progress
+--format ParallelTests::RSpec::SummaryLogger --out tmp/spec_summary.log

@@ -1,0 +1,4 @@
+# TODO: Tune up concurrency? CPU (v)cores num?
+# More on queues weight @see https://github.com/mperham/sidekiq/wiki/Advanced-Options
+
+sidekiq: bundle exec sidekiq -C config/sidekiq.yml
