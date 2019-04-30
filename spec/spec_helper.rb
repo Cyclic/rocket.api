@@ -95,7 +95,7 @@ RSpec.configure do |config|
   end
 
   def authenticated_headers(user_auth_token)
-    {'HTTP_USER_AGENT' => user_auth_token.name, 'HTTP_X-NL-Auth-Token' => user_auth_token.auth_token}
+    {'HTTP_USER_AGENT' => user_auth_token.name, 'HTTP_X-Nl-Auth-Token' => user_auth_token.auth_token}
   end
 
   def authenticated_admin_headers(user_auth_token)

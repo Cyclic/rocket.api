@@ -5,7 +5,9 @@ describe NL::V2::Core::Reproduce do
     context 'Running reproduce' do
       let(:user_auth_token) {{name: 'ios_client_v_0.1.1', auth_token: 'b33437da561846a66634d598517b488859302f886f55d3c8c31a571b5a319388'}}
       before do
-        get '/v2/core/reproduce', {}, authenticated_headers(user_auth_token)
+        header 'HTTP_USER_AGENT', user_auth_token.name
+        header 'HTTP_X-Nl-Auth-Token', user_auth_token.auth_token
+        get '/v2/core/reproduce', {}
       end
       it do
         expect(last_response).to be_ok
