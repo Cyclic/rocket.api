@@ -183,12 +183,12 @@ GEM
       dotenv (= 2.7.2)
       railties (>= 3.2, < 6.1)
     dry-equalizer (0.2.2)
-    elasticsearch (6.3.0)
-      elasticsearch-api (= 6.3.0)
-      elasticsearch-transport (= 6.3.0)
-    elasticsearch-api (6.3.0)
+    elasticsearch (7.0.0)
+      elasticsearch-api (= 7.0.0)
+      elasticsearch-transport (= 7.0.0)
+    elasticsearch-api (7.0.0)
       multi_json
-    elasticsearch-transport (6.3.0)
+    elasticsearch-transport (7.0.0)
       faraday
       multi_json
     equalizer (0.0.11)

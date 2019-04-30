@@ -1,6 +1,6 @@
 module NL
   class AppV2 < Grape::API
-    version 'v1', using: :path
+    version 'v2', using: :path
 
     desc 'User\'s Resources Management', {headers: {'X-NL-Auth-Token' => {required: true}}}
     before {authenticate!}
