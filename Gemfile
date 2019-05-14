@@ -6,9 +6,9 @@ ruby '2.6.2'
 # loading immediately so that other gems have access.
 gem 'dotenv-rails', require: 'dotenv/rails-now'
 
-gem 'rails', '~> 4.2.11.1'
+gem 'rails'
 gem 'rails-api'
-gem 'pg', '~> 0.21'
+gem 'pg'
 gem 'groupdate' # MC stats fetching
 gem 'acts-as-taggable-array-on'
 
