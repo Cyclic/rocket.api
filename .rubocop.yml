@@ -4,12 +4,12 @@ require:
 AllCops:
   RSpec:
     Patterns:
-    - _test.rb
-    - "(?:^|/)test/"
+      - _test.rb
+      - "(?:^|/)test/"
 
   RSpec/FactoryBot:
     Patterns:
-    - spec/factories/**/*.rb
+      - spec/factories/**/*.rb
 
   Exclude:
     - db/**/*

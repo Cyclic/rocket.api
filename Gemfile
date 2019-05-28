@@ -1,13 +1,12 @@
 source 'https://rubygems.org'
 
-ruby '2.6.2'
+ruby '2.6.3'
 
 # dotenv rails hook must go first
 # loading immediately so that other gems have access.
 gem 'dotenv-rails', require: 'dotenv/rails-now'
 
 gem 'rails'
-gem 'rails-api'
 gem 'pg'
 gem 'groupdate' # MC stats fetching
 gem 'acts-as-taggable-array-on'
@@ -15,7 +14,7 @@ gem 'acts-as-taggable-array-on'
 gem 'rack-cors'
 
 gem 'hash_dot'
-gem 'grape'  #git: 'https://github.com/ruby-grape/grape.git'
+gem 'grape' #git: 'https://github.com/ruby-grape/grape.git'
 gem 'grape-rabl'
 gem 'grape-swagger'
 gem 'grape-swagger-rails'
@@ -123,7 +122,6 @@ group :development, :test do
   gem 'database_rewinder' # TODO: replace above gem with it
   gem 'nokogiri' # used by custom have_xpath RSpec matcher
   gem 'webmock'
-  gem 'test_after_commit'
   gem 'fakeredis', require: 'fakeredis/rspec'
 end
 

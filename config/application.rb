@@ -32,9 +32,5 @@ module NeutrinoLabsApi
     config.beginning_of_week = :monday
     Groupdate.week_start = :mon
 
-    ActiveSupport.on_load(:active_record) do
-      self.raise_in_transactional_callbacks = true
-    end
-
   end
 end

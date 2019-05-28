@@ -3,8 +3,8 @@ module UserHelpers
   def current_user
     @current_user ||= headers['X-Nl-Auth-Token']
 
-      # HACK: Reproduced here is where the case has changed.
-      # Would work: User.authenticate!(headers['X-Nl-Auth-Token'], header_client_id) || current_admin_user
+    # HACK: Reproduced here is where the case has changed.
+    # Would work: User.authenticate!(headers['X-Nl-Auth-Token'], header_client_id) || current_admin_user
   end
 
   def current_admin_user
