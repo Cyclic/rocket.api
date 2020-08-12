@@ -136,7 +136,7 @@ GEM
     capistrano-rbenv-install (1.2.0)
       capistrano (>= 3.0)
       capistrano-rbenv (>= 2.0)
-    chartkick (3.1.0)
+    chartkick (3.4.0)
     chronic (0.10.2)
     chronic_duration (0.10.6)
       numerizer (~> 0.1.1)
